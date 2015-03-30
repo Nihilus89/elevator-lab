@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+".\stm32f10x.o"
+".\stm32f10x_gpio.o"
+".\stm32f10x_lib.o"
+".\stm32f10x_nvic.o"
+".\stm32f10x_rcc.o"
+".\stm32f10x_spi.o"
+".\stm32f10x_systick.o"
+".\stm32f10x_tim.o"
+".\stm32f10x_usart.o"
+".\cortexm3_macro_rvds.o"
+".\main.o"
+".\setup.o"
+".\pin_listener.o"
+".\position_tracker.o"
+".\motor.o"
+".\planner.o"
+".\safety.o"
+".\heap_2.o"
+".\list.o"
+".\port.o"
+".\queue.o"
+".\tasks.o"
+".\serial.o"
+--library_type=microlib --strict --scatter ".\stm32_exec.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\stm32_exec.map" -o .\stm32_exec.axf

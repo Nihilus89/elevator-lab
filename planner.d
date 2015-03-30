@@ -1,0 +1,17 @@
+.\planner.o: planner.c
+.\planner.o: .\FreeRTOS\inc\FreeRTOS.h
+.\planner.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\planner.o: .\FreeRTOS\inc\projdefs.h
+.\planner.o: .\FreeRTOSConfig.h
+.\planner.o: .\FreeRTOS\inc\portable.h
+.\planner.o: .\FreeRTOS\inc\portmacro.h
+.\planner.o: .\FreeRTOS\inc\mpu_wrappers.h
+.\planner.o: .\FreeRTOS\inc\task.h
+.\planner.o: .\FreeRTOS\inc\list.h
+.\planner.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\planner.o: global.h
+.\planner.o: .\STM32F10xFWLib\inc\stm32f10x_type.h
+.\planner.o: .\FreeRTOS\inc\queue.h
+.\planner.o: planner.h
+.\planner.o: assert.h
+.\planner.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

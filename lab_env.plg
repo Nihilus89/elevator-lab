@@ -1,0 +1,1226 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Keil\lab_env\RTOSDemo.uvproj
+Project File Date:  01/18/2011
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling stm32f10x_nvic.c...
+STM32F10xFWLib\src\stm32f10x_nvic.c(67): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(104): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(107): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(126): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(134): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(240): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(266): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(283): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(308): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(323): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(338): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(355): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(380): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(398): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(401): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(415): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(427): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(447): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(452): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(456): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(479): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(486): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(490): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(521): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(525): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(569): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(599): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(604): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(623): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(628): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(661): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(694): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(701): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(705): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(717): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(740): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(746): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(750): error:  #20: identifier "SCB" is undefined
+compiling main.c...
+main.c(8): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling setup.c...
+setup.c(7): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling heap_2.c...
+FreeRTOS\src\heap_2.c(69): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling list.c...
+FreeRTOS\src\list.c(56): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling port.c...
+FreeRTOS\src\port.c(59): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling queue.c...
+FreeRTOS\src\queue.c(62): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling tasks.c...
+FreeRTOS\src\tasks.c(64): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling serial.c...
+FreeRTOS\src\serial.c(59): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_nvic.c...
+STM32F10xFWLib\src\stm32f10x_nvic.c(67): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(104): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(107): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(126): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(134): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(240): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(266): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(283): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(308): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(323): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(338): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(355): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(380): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(398): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(401): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(415): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(427): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(447): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(452): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(456): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(479): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(486): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(490): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(521): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(525): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(569): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(599): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(604): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(623): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(628): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(661): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(694): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(701): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(705): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(717): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(740): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(746): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(750): error:  #20: identifier "SCB" is undefined
+compiling main.c...
+main.c(8): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling setup.c...
+setup.c(7): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling heap_2.c...
+FreeRTOS\src\heap_2.c(69): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling list.c...
+FreeRTOS\src\list.c(56): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling port.c...
+FreeRTOS\src\port.c(59): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling queue.c...
+FreeRTOS\src\queue.c(62): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling tasks.c...
+FreeRTOS\src\tasks.c(64): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+compiling serial.c...
+FreeRTOS\src\serial.c(59): error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_gpio.c...
+STM32F10xFWLib\src\stm32f10x_gpio.c(121): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(239): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(278): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(319): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(360): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(392): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(415): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(455): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(506): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+STM32F10xFWLib\src\stm32f10x_nvic.c(67): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(104): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(107): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(126): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(134): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(240): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(266): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(283): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(308): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(323): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(338): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(355): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(380): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(398): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(401): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(415): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(427): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(447): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(452): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(456): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(479): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(486): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(490): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(521): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(525): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(569): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(599): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(604): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(623): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(628): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(661): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(694): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(701): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(705): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(717): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(740): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(746): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(750): error:  #20: identifier "SCB" is undefined
+compiling stm32f10x_rcc.c...
+STM32F10xFWLib\src\stm32f10x_rcc.c(171): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(212): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(239): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(266): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(314): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(367): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(400): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(433): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(466): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(497): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(520): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(549): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(588): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(612): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(631): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(743): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(774): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(806): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(836): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(867): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(891): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(907): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(928): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(960): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(1029): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(1062): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_spi.c...
+STM32F10xFWLib\src\stm32f10x_spi.c(96): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(182): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(216): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(253): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(310): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(336): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(364): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(404): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(435): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(481): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(515): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(547): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(590): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(634): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_systick.c...
+STM32F10xFWLib\src\stm32f10x_systick.c(53): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(76): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(95): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(125): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(167): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_tim.c...
+STM32F10xFWLib\src\stm32f10x_tim.c(159): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(189): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(312): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(433): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(468): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(506): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(541): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(587): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(617): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(661): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(699): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(730): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(758): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(793): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(824): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(855): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(886): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(917): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(944): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(976): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1011): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1041): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1071): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1101): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1130): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1159): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1188): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1217): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1244): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1338): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1360): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1387): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1414): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1441): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1468): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1497): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1527): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1592): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1622): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1722): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1754): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1786): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1818): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1848): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1963): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1998): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(2026): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(2061): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_usart.c...
+STM32F10xFWLib\src\stm32f10x_usart.c(134): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(252): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(344): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(373): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(396): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(415): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(445): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(464): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(490): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(571): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(598): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(626): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(674): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(713): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(749): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(780): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(844): warning:  #223-D: function "assert" declared implicitly
+compiling main.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling setup.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling heap_2.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling list.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling port.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling queue.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling tasks.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling serial.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+Target not created
+Clean started: Project: 'RTOSDemo'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STM32F10x.s...
+compiling stm32f10x_gpio.c...
+STM32F10xFWLib\src\stm32f10x_gpio.c(121): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(239): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(278): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(319): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(360): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(392): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(415): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(455): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(506): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+STM32F10xFWLib\src\stm32f10x_nvic.c(67): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(104): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(107): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(126): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(134): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(240): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(266): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(283): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(308): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(323): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(338): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(355): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(380): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(398): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(401): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(415): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(427): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(447): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(452): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(456): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(479): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(486): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(490): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(521): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(525): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(569): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(599): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(604): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(623): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(628): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(661): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(694): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(701): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(705): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(717): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(740): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(746): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(750): error:  #20: identifier "SCB" is undefined
+compiling stm32f10x_rcc.c...
+STM32F10xFWLib\src\stm32f10x_rcc.c(171): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(212): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(239): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(266): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(314): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(367): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(400): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(433): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(466): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(497): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(520): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(549): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(588): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(612): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(631): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(743): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(774): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(806): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(836): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(867): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(891): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(907): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(928): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(960): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(1029): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(1062): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_spi.c...
+STM32F10xFWLib\src\stm32f10x_spi.c(96): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(182): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(216): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(253): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(310): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(336): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(364): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(404): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(435): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(481): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(515): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(547): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(590): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(634): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_systick.c...
+STM32F10xFWLib\src\stm32f10x_systick.c(53): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(76): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(95): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(125): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(167): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_tim.c...
+STM32F10xFWLib\src\stm32f10x_tim.c(159): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(189): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(312): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(433): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(468): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(506): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(541): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(587): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(617): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(661): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(699): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(730): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(758): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(793): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(824): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(855): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(886): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(917): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(944): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(976): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1011): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1041): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1071): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1101): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1130): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1159): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1188): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1217): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1244): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1338): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1360): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1387): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1414): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1441): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1468): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1497): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1527): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1592): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1622): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1722): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1754): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1786): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1818): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1848): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1963): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1998): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(2026): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(2061): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_usart.c...
+STM32F10xFWLib\src\stm32f10x_usart.c(134): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(252): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(344): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(373): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(396): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(415): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(445): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(464): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(490): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(571): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(598): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(626): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(674): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(713): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(749): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(780): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(844): warning:  #223-D: function "assert" declared implicitly
+assembling cortexm3_macro_rvds.s...
+compiling main.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling setup.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling heap_2.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling list.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling port.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling queue.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling tasks.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling serial.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_nvic.c...
+STM32F10xFWLib\src\stm32f10x_nvic.c(67): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(104): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(107): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(126): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(134): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(240): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(266): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(283): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(308): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(323): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(338): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(355): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(380): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(398): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(401): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(415): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(427): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(447): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(452): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(456): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(479): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(486): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(490): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(521): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(525): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(569): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(599): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(604): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(623): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(628): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(661): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(694): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(701): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(705): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(717): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(740): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(746): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(750): error:  #20: identifier "SCB" is undefined
+compiling main.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling setup.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling heap_2.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling list.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling port.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling queue.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling tasks.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling serial.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+Target not created
+Clean started: Project: 'RTOSDemo'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STM32F10x.s...
+compiling stm32f10x_gpio.c...
+STM32F10xFWLib\src\stm32f10x_gpio.c(121): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(239): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(278): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(319): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(360): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(392): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(415): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(455): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(506): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+STM32F10xFWLib\src\stm32f10x_nvic.c(67): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(104): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(107): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(126): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(134): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(240): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(266): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(283): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(308): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(323): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(338): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(355): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(380): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(398): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(401): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(415): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(427): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(447): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(452): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(456): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(479): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(486): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(490): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(521): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(525): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(569): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(599): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(604): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(623): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(628): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(661): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(694): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(701): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(705): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(717): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(740): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(746): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(750): error:  #20: identifier "SCB" is undefined
+compiling stm32f10x_rcc.c...
+STM32F10xFWLib\src\stm32f10x_rcc.c(171): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(212): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(239): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(266): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(314): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(367): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(400): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(433): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(466): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(497): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(520): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(549): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(588): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(612): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(631): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(743): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(774): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(806): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(836): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(867): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(891): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(907): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(928): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(960): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(1029): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(1062): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_spi.c...
+STM32F10xFWLib\src\stm32f10x_spi.c(96): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(182): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(216): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(253): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(310): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(336): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(364): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(404): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(435): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(481): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(515): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(547): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(590): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(634): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_systick.c...
+STM32F10xFWLib\src\stm32f10x_systick.c(53): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(76): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(95): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(125): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(167): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_tim.c...
+STM32F10xFWLib\src\stm32f10x_tim.c(159): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(189): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(312): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(433): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(468): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(506): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(541): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(587): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(617): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(661): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(699): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(730): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(758): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(793): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(824): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(855): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(886): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(917): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(944): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(976): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1011): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1041): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1071): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1101): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1130): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1159): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1188): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1217): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1244): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1338): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1360): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1387): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1414): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1441): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1468): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1497): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1527): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1592): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1622): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1722): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1754): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1786): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1818): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1848): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1963): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1998): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(2026): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(2061): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_usart.c...
+STM32F10xFWLib\src\stm32f10x_usart.c(134): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(252): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(344): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(373): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(396): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(415): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(445): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(464): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(490): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(571): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(598): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(626): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(674): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(713): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(749): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(780): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(844): warning:  #223-D: function "assert" declared implicitly
+assembling cortexm3_macro_rvds.s...
+compiling main.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling setup.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling heap_2.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling list.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling port.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling queue.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling tasks.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling serial.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_nvic.c...
+STM32F10xFWLib\src\stm32f10x_nvic.c(67): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(104): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(107): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(126): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(134): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(240): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(266): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(283): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(308): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(323): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(338): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(355): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(380): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(398): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(401): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(415): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(427): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(447): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(452): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(456): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(479): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(486): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(490): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(521): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(525): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(569): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(599): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(604): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(623): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(628): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(661): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(694): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(701): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(705): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(717): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(740): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(746): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(750): error:  #20: identifier "SCB" is undefined
+compiling stm32f10x_spi.c...
+STM32F10xFWLib\src\stm32f10x_spi.c(96): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(182): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(216): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(253): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(310): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(336): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(364): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(404): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(435): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(481): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(515): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(547): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(590): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(634): warning:  #223-D: function "assert" declared implicitly
+compiling main.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling setup.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling heap_2.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling list.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling port.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling queue.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling tasks.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling serial.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+Target not created
+Clean started: Project: 'RTOSDemo'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STM32F10x.s...
+compiling stm32f10x_gpio.c...
+STM32F10xFWLib\src\stm32f10x_gpio.c(121): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(239): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(278): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(319): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(360): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(392): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(415): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(455): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(506): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+STM32F10xFWLib\src\stm32f10x_nvic.c(67): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(104): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(107): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(126): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(134): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(240): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(266): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(283): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(308): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(323): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(338): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(355): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(380): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(398): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(401): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(415): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(427): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(447): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(452): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(456): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(479): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(486): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(490): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(521): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(525): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(569): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(599): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(604): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(623): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(628): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(661): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(694): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(701): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(705): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(717): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(740): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(746): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(750): error:  #20: identifier "SCB" is undefined
+compiling stm32f10x_rcc.c...
+STM32F10xFWLib\src\stm32f10x_rcc.c(171): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(212): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(239): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(266): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(314): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(367): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(400): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(433): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(466): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(497): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(520): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(549): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(588): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(612): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(631): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(743): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(774): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(806): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(836): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(867): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(891): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(907): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(928): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(960): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(1029): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(1062): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_spi.c...
+STM32F10xFWLib\src\stm32f10x_spi.c(96): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(182): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(216): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(253): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(310): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(336): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(364): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(404): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(435): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(481): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(515): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(547): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(590): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(634): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_systick.c...
+STM32F10xFWLib\src\stm32f10x_systick.c(53): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(76): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(95): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(125): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(167): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_tim.c...
+STM32F10xFWLib\src\stm32f10x_tim.c(159): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(189): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(312): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(433): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(468): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(506): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(541): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(587): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(617): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(661): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(699): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(730): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(758): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(793): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(824): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(855): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(886): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(917): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(944): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(976): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1011): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1041): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1071): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1101): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1130): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1159): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1188): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1217): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1244): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1338): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1360): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1387): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1414): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1441): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1468): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1497): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1527): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1592): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1622): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1722): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1754): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1786): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1818): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1848): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1963): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1998): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(2026): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(2061): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_usart.c...
+STM32F10xFWLib\src\stm32f10x_usart.c(134): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(252): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(344): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(373): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(396): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(415): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(445): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(464): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(490): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(571): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(598): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(626): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(674): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(713): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(749): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(780): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(844): warning:  #223-D: function "assert" declared implicitly
+assembling cortexm3_macro_rvds.s...
+compiling main.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling setup.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling heap_2.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling list.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling port.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling queue.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling tasks.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling serial.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+Target not created
+Clean started: Project: 'RTOSDemo'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STM32F10x.s...
+compiling stm32f10x_gpio.c...
+STM32F10xFWLib\src\stm32f10x_gpio.c(121): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(239): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(278): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(319): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(360): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(392): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(415): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(455): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_gpio.c(506): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+STM32F10xFWLib\src\stm32f10x_nvic.c(67): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(104): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(107): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(126): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(134): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(240): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(266): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(283): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(308): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(323): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(338): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(355): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(380): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(398): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(401): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(415): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(427): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(447): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(452): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(456): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(479): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(486): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(490): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(521): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(525): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(569): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(599): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(604): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(623): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(628): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(661): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(694): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(701): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(705): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(717): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(740): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_nvic.c(746): error:  #20: identifier "SCB" is undefined
+STM32F10xFWLib\src\stm32f10x_nvic.c(750): error:  #20: identifier "SCB" is undefined
+compiling stm32f10x_rcc.c...
+STM32F10xFWLib\src\stm32f10x_rcc.c(171): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(212): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(239): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(266): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(314): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(367): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(400): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(433): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(466): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(497): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(520): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(549): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(588): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(612): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(631): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(743): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(774): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(806): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(836): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(867): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(891): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(907): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(928): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(960): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(1029): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_rcc.c(1062): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_spi.c...
+STM32F10xFWLib\src\stm32f10x_spi.c(96): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(182): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(216): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(253): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(310): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(336): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(364): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(404): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(435): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(481): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(515): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(547): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(590): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_spi.c(634): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_systick.c...
+STM32F10xFWLib\src\stm32f10x_systick.c(53): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(76): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(95): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(125): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_systick.c(167): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_tim.c...
+STM32F10xFWLib\src\stm32f10x_tim.c(159): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(189): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(312): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(433): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(468): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(506): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(541): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(587): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(617): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(661): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(699): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(730): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(758): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(793): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(824): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(855): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(886): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(917): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(944): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(976): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1011): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1041): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1071): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1101): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1130): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1159): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1188): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1217): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1244): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1338): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1360): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1387): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1414): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1441): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1468): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1497): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1527): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1562): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1592): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1622): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1722): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1754): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1786): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1818): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1848): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1963): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(1998): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(2026): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_tim.c(2061): warning:  #223-D: function "assert" declared implicitly
+compiling stm32f10x_usart.c...
+STM32F10xFWLib\src\stm32f10x_usart.c(134): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(252): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(293): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(344): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(373): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(396): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(415): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(445): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(464): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(490): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(571): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(598): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(626): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(655): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(674): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(713): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(749): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(780): warning:  #223-D: function "assert" declared implicitly
+STM32F10xFWLib\src\stm32f10x_usart.c(844): warning:  #223-D: function "assert" declared implicitly
+assembling cortexm3_macro_rvds.s...
+compiling main.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling setup.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling heap_2.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling list.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling port.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling queue.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling tasks.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+compiling serial.c...
+.\FreeRTOS\inc\FreeRTOS.h(64): error:  #5: cannot open source input file "projdefs.h": No such file or directory
+Target not created
