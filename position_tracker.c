@@ -14,13 +14,38 @@
 #include "position_tracker.h"
 
 #include "assert.h"
+#include <stdbool.h>
 
-static void positionTrackerTask(void *params) {
+#define POSITION GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_9)
 
-  // ...
+static void positionTrackerTask(void *params) 
+{
+	portTickType xLastWakeTime;
+	const portTickType xFrequency = 3/portTICK_RATE_MS;
+	bool pulse = false;
+	
+	PositionTracker *tracker = (PositionTracker*)params;
+	xLastWakeTime = xTaskGetTickCount();
+	
+	for (;;) 
+	{
 
-  vTaskDelay(portMAX_DELAY);
-
+		if (POSITION)
+		{
+			if(!pulse)
+			{
+				pulse = true;
+				
+				if (tracker->direction == Up)
+					tracker->position++;
+				else if( tracker->direction == Down )
+					tracker->position--;
+			}
+		else
+			pulse = false;
+		vTaskDelayUntil(&xLastWakeTime, xFrequency);
+		}
+	}
 }
 
 void setupPositionTracker(PositionTracker *tracker,

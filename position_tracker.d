@@ -17,3 +17,4 @@
 .\position_tracker.o: .\STM32F10xFWLib\inc\stm32f10x_type.h
 .\position_tracker.o: .\STM32F10xFWLib\inc\cortexm3_macro.h
 .\position_tracker.o: assert.h
+.\position_tracker.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

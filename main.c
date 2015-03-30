@@ -154,6 +154,7 @@ int main( void )
   setupPlanner(1);
   setupSafety(3);
 
+
   printf("Setup completed\n");  // this is redirected to USART 1
 
   vTaskStartScheduler();
