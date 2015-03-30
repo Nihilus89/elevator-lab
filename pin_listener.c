@@ -15,7 +15,6 @@
 #include "assert.h"
 
 
-
 static void pollPin(PinListener *listener, xQueueHandle pinEventQueue)
 {
 	int pin;

@@ -26,8 +26,6 @@ static void plannerTask(void *params) {
 	PinEvent pi;
 	bool status = false, newstate = false;
 	
-	setCarTargetPosition(50);
-	
 	for(;;)
 	{
 		if((READ) != status)
