@@ -8,6 +8,7 @@
 .\position_tracker.o: .\FreeRTOS\inc\mpu_wrappers.h
 .\position_tracker.o: .\FreeRTOS\inc\task.h
 .\position_tracker.o: .\FreeRTOS\inc\list.h
+.\position_tracker.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\position_tracker.o: position_tracker.h
 .\position_tracker.o: .\FreeRTOS\inc\semphr.h
 .\position_tracker.o: .\FreeRTOS\inc\queue.h

@@ -26,11 +26,9 @@ static void plannerTask(void *params) {
 	PinEvent pi;
 	bool status[9] = {false};
 	
-	
-	
 	for(;;)
 	{
-		//setCarTargetPosition(50);
+		setCarTargetPosition(50);
 		if(READ)
 		{
 			status[pi] = !status[pi];
@@ -39,7 +37,6 @@ static void plannerTask(void *params) {
 			else
 				printf("Button %d released\n", pi);
 		}
-		
 	}
 }
 

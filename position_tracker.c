@@ -10,6 +10,7 @@
 
 #include "FreeRTOS.h"
 #include "task.h"
+#include <stdio.h>
 
 #include "position_tracker.h"
 
@@ -29,7 +30,7 @@ static void positionTrackerTask(void *params)
 	
 	for (;;) 
 	{
-
+		//printf("Position: %lu\n",getPosition(tracker));
 		if (POSITION)
 		{
 			if(!pulse)
@@ -69,15 +70,13 @@ void setupPositionTracker(PositionTracker *tracker,
 
 void setDirection(PositionTracker *tracker, Direction dir) {
 
-  // ...
+	tracker->direction = dir;
 
 }
 
 s32 getPosition(PositionTracker *tracker) {
 
-  // ...
-
-  return 0;
+  return tracker->position;
 
 }
 

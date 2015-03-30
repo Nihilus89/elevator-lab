@@ -51,8 +51,7 @@ static void safetyTask(void *params) {
 	//                           the elevator is at a floor and
     //                           the motor is not active
 
-	check((AT_FLOOR && MOTOR_STOPPED) || DOORS_CLOSED,
-	      "env1");
+	//check((AT_FLOOR && MOTOR_STOPPED) || DOORS_CLOSED, "env1");
 
 	// fill in environment assumption 2
 	check(1, "env2");
