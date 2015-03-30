@@ -24,25 +24,19 @@
 
 static void plannerTask(void *params) {
 	PinEvent pi;
-	bool status = false, newstate = false;
+	bool status[9] = {false};
 	
 	for(;;)
 	{
-		if((READ) != status)
+		if(READ)
 		{
-			vTaskDelay(20/ portTICK_RATE_MS);
-			newstate = READ;
-			if(newstate != status)
-			{
-				if(!status)
-					printf("Button %d pressed\n", pi);
-				else
-					printf("Button %d released\n", pi);
-				status = newstate;
-				
-			}
+			status[pi] = !status[pi];
+			if(status[pi])
+				printf("Button %d pressed\n", pi);
+			else
+				printf("Button %d released\n", pi);
 		}
-
+		
 	}
 }
 

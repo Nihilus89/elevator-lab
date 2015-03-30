@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\stm32_exec.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\stm32_exec.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Mon Mar 30 13:29:26 2015
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Mon Mar 30 14:43:25 2015
 <BR><P>
 <H3>Maximum Stack Usage =        216 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -153,12 +153,12 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
 </UL>
 <P><STRONG><a name="[ae]"></a>vPortSetInterruptMask</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, port.o(.emb_text))
-<BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskEndScheduler
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceiveFromISR
+<BR><BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceiveFromISR
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSendFromISR
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskStartScheduler
 <LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortSysTickHandler
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskEndScheduler
 </UL>
 
 <P><STRONG><a name="[b0]"></a>vPortClearInterruptMask</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, port.o(.emb_text))
@@ -1131,18 +1131,18 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[cd]"></a>vListInsertEnd</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, list.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeFromISR
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPriorityInherit
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPriorityDisinherit
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskIncrementTick
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericCreate
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeFromISR
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
 </UL>
 
 <P><STRONG><a name="[d0]"></a>vListInsert</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, list.o(.text))
@@ -1154,12 +1154,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[cf]"></a>vListRemove</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, list.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeFromISR
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
+<BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPriorityInherit
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPriorityDisinherit
@@ -1168,6 +1163,11 @@ Global Symbols
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeFromISR
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
 </UL>
 
 <P><STRONG><a name="[cc]"></a>pxPortInitialiseStack</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, port.o(.text))
@@ -1188,11 +1188,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ba]"></a>vPortYieldFromISR</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, port.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
-<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIdleTask
+<BR><BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIdleTask
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
@@ -1200,6 +1196,10 @@ Global Symbols
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vUARTInterruptHandler
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
 </UL>
 
 <P><STRONG><a name="[ad]"></a>vPortEnterCritical</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, port.o(.text))
@@ -1207,12 +1207,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortSetInterruptMask
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxTaskPriorityGet
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxQueueMessagesWaiting
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
@@ -1223,6 +1218,11 @@ Global Symbols
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericCreate
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxTaskPriorityGet
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
 </UL>
 
 <P><STRONG><a name="[af]"></a>vPortExitCritical</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, port.o(.text))
@@ -1230,12 +1230,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortClearInterruptMask
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxTaskPriorityGet
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxQueueMessagesWaiting
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
@@ -1246,6 +1241,11 @@ Global Symbols
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericCreate
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxTaskPriorityGet
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
 </UL>
 
 <P><STRONG><a name="[9]"></a>xPortSysTickHandler</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, port.o(.text))
@@ -1332,11 +1332,11 @@ Global Symbols
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
 </UL>
-<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xSerialGetChar
-<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;plannerTask
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;plannerTask
 <LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motorTask
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setTargetPosition
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setMotorStopped
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xSerialGetChar
 </UL>
 
 <P><STRONG><a name="[c3]"></a>xQueueReceiveFromISR</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, queue.o(.text))
@@ -1456,8 +1456,7 @@ Global Symbols
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;plannerTask
-<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;positionTrackerTask
+<BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;positionTrackerTask
 </UL>
 
 <P><STRONG><a name="[d1]"></a>uxTaskPriorityGet</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
@@ -1474,8 +1473,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[40]"></a>vTaskSwitchContext</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, tasks.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
-<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortPendSVHandler
+<BR><BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortPendSVHandler
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
 </UL>
 
 <P><STRONG><a name="[d3]"></a>vTaskSuspend</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
@@ -1493,18 +1492,18 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d4]"></a>vTaskResume</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskIsTaskSuspended
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<BR><BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYieldFromISR
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListRemove
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskIsTaskSuspended
 </UL>
 
 <P><STRONG><a name="[d6]"></a>xTaskResumeFromISR</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskIsTaskSuspended
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListRemove
+<BR><BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListRemove
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskIsTaskSuspended
 </UL>
 
 <P><STRONG><a name="[7f]"></a>vTaskStartScheduler</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, tasks.o(.text))
@@ -1628,8 +1627,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vSerialPutString
-<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vSerialPutString
 </UL>
 
 <P><STRONG><a name="[df]"></a>vSerialPutString</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, serial.o(.text), UNUSED)
@@ -1663,9 +1662,9 @@ Global Symbols
 <P><STRONG><a name="[17b]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[cb]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAllocateTCBAndStack
+<BR><BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAllocateTCBAndStack
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
 <P><STRONG><a name="[17c]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
@@ -1762,7 +1761,7 @@ Local Symbols
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ETRClockMode1Config
 </UL>
 
-<P><STRONG><a name="[90]"></a>pollPin</STRONG> (Thumb, 166 bytes, Stack size 16 bytes, pin_listener.o(.text))
+<P><STRONG><a name="[90]"></a>pollPin</STRONG> (Thumb, 346 bytes, Stack size 16 bytes, pin_listener.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = pollPin &rArr; xQueueGenericSend &rArr; prvCopyDataToQueue &rArr; vTaskPriorityDisinherit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
@@ -1774,10 +1773,10 @@ Local Symbols
 <P><STRONG><a name="[37]"></a>pollPinsTask</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, pin_listener.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = pollPinsTask &rArr; pollPin &rArr; xQueueGenericSend &rArr; prvCopyDataToQueue &rArr; vTaskPriorityDisinherit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pollPin
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> pin_listener.o(.text)
 </UL>
@@ -1831,11 +1830,10 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> motor.o(.text)
 </UL>
-<P><STRONG><a name="[3a]"></a>plannerTask</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, planner.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = plannerTask &rArr; xQueueGenericReceive &rArr; xTaskCheckForTimeOut &rArr; vPortExitCritical
+<P><STRONG><a name="[3a]"></a>plannerTask</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, planner.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = plannerTask &rArr; xQueueGenericReceive &rArr; xTaskCheckForTimeOut &rArr; vPortExitCritical
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> planner.o(.text)
@@ -1888,8 +1886,8 @@ Local Symbols
 <P><STRONG><a name="[b7]"></a>prvCopyDataToQueue</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, queue.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = prvCopyDataToQueue &rArr; vTaskPriorityDisinherit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPriorityDisinherit
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPriorityDisinherit
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSendFromISR
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
@@ -1933,9 +1931,9 @@ Local Symbols
 <P><STRONG><a name="[ca]"></a>prvAllocateTCBAndStack</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, tasks.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = prvAllocateTCBAndStack &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; vTaskIncrementTick
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericCreate
 </UL>

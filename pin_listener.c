@@ -13,43 +13,52 @@
 
 #include "pin_listener.h"
 #include "assert.h"
+#include <stdbool.h>
+
+int status[9] = {0};
 
 
 static void pollPin(PinListener *listener, xQueueHandle pinEventQueue)
 {
 	int pin;
 	
-	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_0))
+	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_0) != status[0])
 	{
 		pin = 0;
+		status[pin] = !status[pin];
 		xQueueSend(pinEventQueue, &pin, portMAX_DELAY); 
 	}
-	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_1))
+	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_1)!= status[1])
 	{
 		pin = 1;
+		status[pin] = !status[pin];
 		xQueueSend(pinEventQueue, &pin, portMAX_DELAY); 
 	}
 	
-	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_2))
+	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_2)!= status[2])
 	{
 		pin = 2;
+		status[pin] = !status[pin];
 		xQueueSend(pinEventQueue, &pin, portMAX_DELAY); 
 	}
 	
-	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_3))
+	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_3)!= status[3])
 	{
 		pin = 3;
+		status[pin] = !status[pin];
 		xQueueSend(pinEventQueue, &pin, portMAX_DELAY); 
 	}
-	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_7))
+	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_7)!= status[7])
 	{
 		pin = 7;
+		status[pin] = !status[pin];
 		xQueueSend(pinEventQueue, &pin, portMAX_DELAY); 
 	}
 	
-	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_8))
+	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_8)!= status[8])
 	{
 		pin = 8;
+		status[pin] = !status[pin];
 		xQueueSend(pinEventQueue, &pin, portMAX_DELAY); 
 	}
 		

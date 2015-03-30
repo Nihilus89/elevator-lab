@@ -18,3 +18,4 @@
 .\pin_listener.o: global.h
 .\pin_listener.o: .\FreeRTOS\inc\queue.h
 .\pin_listener.o: assert.h
+.\pin_listener.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
