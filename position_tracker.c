@@ -16,6 +16,8 @@
 
 #include "assert.h"
 #include <stdbool.h>
+#include <stdlib.h>
+#include "global.h"
 
 #define POSITION GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_9)
 
@@ -25,28 +27,38 @@ static void positionTrackerTask(void *params)
 	const portTickType xFrequency = 3/portTICK_RATE_MS;
 	bool pulse = false;
 	
+	int count = 0, pulses = 0;
+	
 	PositionTracker *tracker = (PositionTracker*)params;
 	xLastWakeTime = xTaskGetTickCount();
 	
 	for (;;) 
 	{
-		//printf("Position: %lu\n",getPosition(tracker));
+		
 		if (POSITION)
 		{
 			if(!pulse)
 			{
 				pulse = true;
-				
+				pulses++;
+				printf("pulses: %d\n",pulses);
+				//printf("Position: %lu\n",getCarPosition());
 				if (tracker->direction == Up)
 					tracker->position++;
 				else if( tracker->direction == Down )
 					tracker->position--;
 			}
+		}
 		else
 			pulse = false;
-		vTaskDelayUntil(&xLastWakeTime, xFrequency);
-		}
+			
+	//count++;	
+	//printf("count: %d\n",count);	
+	vTaskDelayUntil(&xLastWakeTime, xFrequency);
+
 	}
+
+		
 }
 
 void setupPositionTracker(PositionTracker *tracker,
@@ -79,4 +91,3 @@ s32 getPosition(PositionTracker *tracker) {
   return tracker->position;
 
 }
-

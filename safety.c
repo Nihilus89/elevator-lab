@@ -43,9 +43,11 @@ static void check(u8 assertion, char *name) {
 
 static void safetyTask(void *params) {
   s16 timeSinceStopPressed = -1;
-
+	s8 counter = 0;
+	s32 previousPos = 0, currentPos = 0;
   xLastWakeTime = xTaskGetTickCount();
-
+	
+	currentPos = getCarPosition();
   for (;;) {
     // Environment assumption 1: the doors can only be opened if
 	//                           the elevator is at a floor and
@@ -53,9 +55,11 @@ static void safetyTask(void *params) {
 
 	//check((AT_FLOOR && MOTOR_STOPPED) || DOORS_CLOSED, "env1");
 
-	// fill in environment assumption 2
+	// fill in environment assumption 2 : Maximum speed is 50 cm/s
+		
+		
 	check(1, "env2");
-
+	
 	// fill in environment assumption 3
 	check(1, "env3");
 
@@ -106,3 +110,4 @@ static void safetyTask(void *params) {
 void setupSafety(unsigned portBASE_TYPE uxPriority) {
   xTaskCreate(safetyTask, "safety", 100, NULL, uxPriority, NULL);
 }
+

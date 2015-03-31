@@ -181,3 +181,4 @@ void setMotorStopped(Motor *motor, u8 stopped) {
   motor->stopped = stopped;
   xSemaphoreGive(motor->lock);
 }
+
