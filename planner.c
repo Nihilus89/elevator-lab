@@ -55,7 +55,7 @@ static void plannerTask(void *params) {
 	PinEvent pi;
 	char qHead=0,qTail=0;
 	int destination, OLDdestination, interm_FLG = false, count = 0;
-	bool status[9] = {false}, reached = true, door_pin, door, at_floor, swap_FLG = false;
+	bool status[9] = {false}, reached = true, doors, door, at_floor, swap_FLG = false;
 	
 	xLastWakeTime = xTaskGetTickCount();
 	for(;;)
@@ -64,7 +64,7 @@ static void plannerTask(void *params) {
 		if(READ)
 		{
 			status[pi] = !status[pi];
-			door_pin = status[8];
+			doors = status[8];
 			at_floor = status[7];
 			if(status[pi])
 			{
@@ -94,14 +94,14 @@ static void plannerTask(void *params) {
 		// Reading the queue and setting the destination
 			if(MOTOR_STOPPED)
 			{
+
 				//if((currentPos >= (destination - 0.5)) && (currentPos <=(destination + 0.5)))
 				//{	
 					if(qTail > 2)
 						qTail =0;
 					
-					if(floorRequest[qTail]!= -1 && reached && (count == 210))
+					if(floorRequest[qTail]!= -1 && reached && (count >= 210) && doors)
 					{
-						count=0;
 						destination = floorRequest[qTail];
 						setCarTargetPosition(destination);
 						reached = false;
@@ -116,18 +116,19 @@ static void plannerTask(void *params) {
 						floorRequest[qTail] = -1;
 						qTail++;
 						reached = true;
+						count=0;
 						printf("\nReached destination\n");
 						printf("floorRequest[0]: %d\n", floorRequest[0]);
 						printf("floorRequest[1]: %d\n", floorRequest[1]);
 						printf("floorRequest[2]: %d\n", floorRequest[2]);
 					}
 			}
-			
-		if(MOTOR_STOPPED && at_floor)
-		{
-			if (count <= 210)
-				count++;
-		}
+			if(reached)
+			{
+				if (count <= 210)
+					count++;
+			}
+
 			//printf("count: %d\n", count);
 			
 			/*else

@@ -62,7 +62,7 @@ static void safetyTask(void *params) {
 	
   for (;;) {
 		
-		//******* Debuggin only: can be ignored*********************************
+		//******* Debugging only: can be ignored********************************
 		
 		
 		if((!MOTOR_STOPPED) && !motor_flg) // if motor is running and the motor flag isn't raised
