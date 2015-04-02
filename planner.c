@@ -29,6 +29,7 @@
 
 #define READ xQueueReceive(pinEventQueue, &pi, (portTickType)0)
 #define BUTTON0 READ & (pi == 0)
+
 int floorRequest[3]= {-1,-1,-1};
 int Floors[3]= {0,20,40};
 int inQueue(PinEvent pi);
@@ -39,21 +40,19 @@ int inQueue(PinEvent pi)
 
 	for(i=0;i<3;i++)
 	{
-		if(floorRequest[i]==pi)
+		if(floorRequest[i]==Floors[pi])
 			return 1;
 	}
 	return 0;
 }
 
 static void plannerTask(void *params) {
+	
 	PinEvent pi;
-	 //xQueueHandle floorRequest;
-	//int i;
 	char qHead=0,qTail=0;
 	int destination, OLDdestination, interm_FLG = false;
-	 
 	bool status[9] = {false};
-	//floorRequest = xQueueCreate( 10, sizeof( PinEvent ) );
+	
 	for(;;)
 	{
 		currentPos = getCarPosition();
@@ -91,7 +90,7 @@ static void plannerTask(void *params) {
 	
 		
 		// Reading the queue and setting the destination
-			if(MOTOR_STOPPED )
+			if(MOTOR_STOPPED)
 			{
 				//if((currentPos >= (destination - 0.5)) && (currentPos <=(destination + 0.5)))
 				//{	
@@ -111,37 +110,34 @@ static void plannerTask(void *params) {
 			}
 			else
 			{
-				if(floorRequest[1] != -1) // if floor request is 2 (somebody caled the elevator to floor 2)
+				if((floorRequest[qTail] == 20) && !interm_FLG) // if floor request is 2 (somebody caled the elevator to floor 2)
 				{
 					if(MOTOR_UPWARD) // and your moving upwards
 					{
 						if(currentPos < (Floors[FLOOR_2] - SAFE_DISTANCE))	// if you are at a safe distance from floor 2 to make a stop
 						{
-							if(!interm_FLG)
-							{
+
 								 //you make a stop at floor 2
 								printf("\nDestination changed\n");
-								printf("\nfloorRequest[1]: %d\n", floorRequest[1]);
 								OLDdestination = destination;
 								destination = Floors[FLOOR_2];
 								setCarTargetPosition(destination);
 								interm_FLG = true;
-							}
+							
 						}
 					}
 					else if(MOTOR_DOWNWARD) // else if you are moving downwards
 					{
 						if(currentPos > (Floors[FLOOR_2] + SAFE_DISTANCE))	// if you are at a safe distance from floor 2 to make a stop
 						{
-							if(!interm_FLG)
-							{
+
 							// you make a stop at floor 2
 							printf("\nDestination changed\n");
 							OLDdestination = destination;
 							destination = Floors[FLOOR_2];
 							setCarTargetPosition(destination);
 							interm_FLG = true;
-							}
+							
 						}
 					}
 				}
