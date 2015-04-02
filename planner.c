@@ -20,7 +20,7 @@
 #include "queue.h"
 #include <stdbool.h>
 
-
+#define DELAY (5 / portTICK_RATE_MS)
 #define MOTOR_UPWARD   (TIM3->CCR1)
 #define MOTOR_DOWNWARD (TIM3->CCR2)
 #define MOTOR_STOPPED  (!MOTOR_UPWARD && !MOTOR_DOWNWARD)
@@ -34,9 +34,10 @@
 #define SAFE_TO_STOP UPWARDS_SAFE || DOWNWARDS_SAFE
 
 int floorRequest[3]= {-1,-1,-1};
-int Floors[3]= {0,20,40};
+int Floors[3]= {0,400,800};
 int inQueue(PinEvent pi);
 s32 currentPos;
+static portTickType xLastWakeTime;
 int inQueue(PinEvent pi)
 {
 	int i;
@@ -53,15 +54,18 @@ static void plannerTask(void *params) {
 	
 	PinEvent pi;
 	char qHead=0,qTail=0;
-	int destination, OLDdestination, interm_FLG = false;
-	bool status[9] = {false}, reached = true, swap_FLG = false;
+	int destination, OLDdestination, interm_FLG = false, count = 0;
+	bool status[9] = {false}, reached = true, door_pin, door, at_floor, swap_FLG = false;
 	
+	xLastWakeTime = xTaskGetTickCount();
 	for(;;)
 	{
 		currentPos = getCarPosition();
 		if(READ)
 		{
 			status[pi] = !status[pi];
+			door_pin = status[8];
+			at_floor = status[7];
 			if(status[pi])
 			{
 				if(pi==0 || pi ==1 || pi == 2)
@@ -95,8 +99,9 @@ static void plannerTask(void *params) {
 					if(qTail > 2)
 						qTail =0;
 					
-					if(floorRequest[qTail]!= -1 && reached)
+					if(floorRequest[qTail]!= -1 && reached && (count == 210))
 					{
+						count=0;
 						destination = floorRequest[qTail];
 						setCarTargetPosition(destination);
 						reached = false;
@@ -118,6 +123,12 @@ static void plannerTask(void *params) {
 					}
 			}
 			
+		if(MOTOR_STOPPED && at_floor)
+		{
+			if (count <= 210)
+				count++;
+		}
+			//printf("count: %d\n", count);
 			
 			/*else
 			{
@@ -178,7 +189,7 @@ static void plannerTask(void *params) {
 				//printf("Button %d pressed\n", pi);
 			//else
 				//printf("Button %d released\n", pi);
-		
+		vTaskDelayUntil(&xLastWakeTime, DELAY);
 	}
 }
 
