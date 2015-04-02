@@ -87,11 +87,6 @@ static void plannerTask(void *params) {
 			}
 		}
 		
-		if(SAFE_TO_STOP)
-			printf("SAFE_TO_STOP\n");
-		else
-			printf("NOT_SAFE_TO_STOP\n");
-		
 		// Reading the queue and setting the destination
 			if(MOTOR_STOPPED)
 			{
