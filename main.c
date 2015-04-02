@@ -148,7 +148,6 @@ void setCarMotorStopped(u8 stopped) {
 int main( void )
 {
   prvSetupHardware();
-
   setupInputModule();
   setupActuatorModule();
   setupPlanner(1);

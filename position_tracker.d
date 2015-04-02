@@ -19,3 +19,6 @@
 .\position_tracker.o: .\STM32F10xFWLib\inc\cortexm3_macro.h
 .\position_tracker.o: assert.h
 .\position_tracker.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\position_tracker.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\position_tracker.o: global.h
+.\position_tracker.o: .\FreeRTOS\inc\queue.h

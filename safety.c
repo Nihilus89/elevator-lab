@@ -29,7 +29,13 @@
 #define AT_FLOOR      GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_7)
 #define DOORS_CLOSED  GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_8)
 
+#define PEEK xQueuePeek(pinEventQueue, &qPeek, (portTickType)0)
+#define FLOOR_CALL_QUEUED  PEEK & ((qPeek == 0) || (qPeek == 1) || (qPeek == 2))
+
+unsigned char SPEED_LIMIT;
 static portTickType xLastWakeTime;
+
+PinEvent qPeek;
 
 static void check(u8 assertion, char *name) {
   if (!assertion) {
@@ -43,31 +49,61 @@ static void check(u8 assertion, char *name) {
 
 static void safetyTask(void *params) {
   s16 timeSinceStopPressed = -1;
-	s8 counter = 0;
-	s32 previousPos = 0, currentPos = 0;
-  xLastWakeTime = xTaskGetTickCount();
+	s32 position = 0;
+	char FLOOR_POS = 1, rightPosition = 1;
+	//portTickType motor_started = 0, OLD_motor_started = 0;
+	s16 motor_flg = 0, arrived = 1;
+	unsigned long on_floor = 0;
 	
-	currentPos = getCarPosition();
+	
+  xLastWakeTime = xTaskGetTickCount();
+	SPEED_LIMIT = 1;
+
+	
   for (;;) {
+		
+		//******* Debuggin only: can be ignored*********************************
+		
+		
+		if((!MOTOR_STOPPED) && !motor_flg) // if motor is running and the motor flag isn't raised
+		{
+			motor_flg = 1;
+			printf("Motor STARTED\n");
+		}
+		else if(MOTOR_STOPPED && motor_flg)
+		{
+			printf("Motor STOPPED\n");
+			motor_flg = 0;
+		}
+		//**********************************************************************
+		
+		
     // Environment assumption 1: the doors can only be opened if
 	//                           the elevator is at a floor and
     //                           the motor is not active
+	check((AT_FLOOR && MOTOR_STOPPED) || DOORS_CLOSED, "env1");
 
-	//check((AT_FLOOR && MOTOR_STOPPED) || DOORS_CLOSED, "env1");
-
-	// fill in environment assumption 2 : Maximum speed is 50 cm/s
-		
-		
-	check(1, "env2");
+	// Environment assumption 2 : Maximum speed is 50 cm/s
 	
-	// fill in environment assumption 3
-	check(1, "env3");
+	check(SPEED_LIMIT, "env2");
+	
+		/* Environment assumption 3 : If the ground floor is put at 0cm in an absolute coordinate system, 
+		the second floor is at 400cm and the third floor at 800cm (the at-floor sensor reports a floor 
+		with a threshold of +-0.5cm)*/
+		position = getCarPosition();
+		FLOOR_POS = 1;
+		rightPosition = ((position == FLOOR_1 || position == FLOOR_1 + 1 || position == FLOOR_2 - 1 || position == FLOOR_2 || position == FLOOR_2 + 1 || position == FLOOR_3 - 1 || position == FLOOR_3 || position == FLOOR_3 + 1));
+		if(AT_FLOOR)
+		{
+			if(!rightPosition)
+				FLOOR_POS = 0;
+		}
+		check(FLOOR_POS, "env3");
 
 	// fill in your own environment assumption 4
 	check(1, "env4");
 
-    // System requirement 1: if the stop button is pressed, the motor is
-	//                       stopped within 1s
+    // System requirement 1: if the stop button is pressed, the motor is stopped within 1s
 
 	if (STOP_PRESSED) {
 	  if (timeSinceStopPressed < 0)
@@ -81,27 +117,40 @@ static void safetyTask(void *params) {
 	  timeSinceStopPressed = -1;
 	}
 
-    // System requirement 2: the motor signals for upwards and downwards
-	//                       movement are not active at the same time
+    // System requirement 2: the motor signals for upwards and downwards movement are not active at the same time
 
     check(!MOTOR_UPWARD || !MOTOR_DOWNWARD,
           "req2");
 
-	// fill in safety requirement 3
-	check(1, "req3");
+	// System requirement 3: The elevator may not pass the end positions, that is, go through the roof or the floor
+	check((position >= FLOOR_1) && (position <=FLOOR_3), "req3");
 
-	// fill in safety requirement 4
-	check(1, "req4");
+	// System requirement 4: A moving elevator halts only if the stop button is pressed or the elevator has arrived at a floor
+	if(MOTOR_STOPPED)
+		check((STOP_PRESSED || AT_FLOOR), "req4");
 
-	// fill in safety requirement 5
-	check(1, "req5");
+	
+	if(MOTOR_STOPPED && AT_FLOOR)
+	{
+		if(arrived)
+		{
+			on_floor = 0;
+			arrived = 0;
+		}
+		if (on_floor <= 100)
+			on_floor++;
+	}
+	else
+		arrived = 1;
+	
+	// System requirement 5: Once the elevator has stopped at a floor, it will wait for at least 1s before it continues to another floor
+	if(!motor_flg)
+		check(on_floor>100 || MOTOR_STOPPED, "req5");
 
 	// fill in safety requirement 6
 	check(1, "req6");
 
-	// fill in safety requirement 7
-	check(1, "req7");
-
+		
 	vTaskDelayUntil(&xLastWakeTime, POLL_TIME);
   }
 

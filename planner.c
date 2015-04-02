@@ -18,6 +18,7 @@
 #include "planner.h"
 #include "assert.h"
 #include <stdbool.h>
+#include "assert.h"
 
 #define READ xQueueReceive(pinEventQueue, &pi, (portTickType)0)
 #define BUTTON0 READ & (pi == 0)
@@ -25,17 +26,27 @@
 static void plannerTask(void *params) {
 	PinEvent pi;
 	bool status[9] = {false};
-	setCarTargetPosition(50);
+	
 	for(;;)
-	{
-		
+	{		
 		if(READ)
 		{
-			status[pi] = !status[pi];
+			if(pi == 0)
+				//status[pi] = !status[pi];
+				setCarTargetPosition(FLOOR_1);
+			if(pi == 1)
+				setCarTargetPosition(FLOOR_2);
+			if(pi == 2)
+				setCarTargetPosition(FLOOR_3);
+			if(pi == 3)
+				setCarMotorStopped(1);
+			if(pi == 7)
+				printf("AT_FLOOR\n");
 			if(status[pi])
 				printf("Button %d pressed\n", pi);
-			else
-				printf("Button %d released\n", pi);
+			//else
+				//printf("Button %d released\n", pi);
+			
 		}
 	}
 }

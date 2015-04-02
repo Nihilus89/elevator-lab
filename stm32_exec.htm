@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\stm32_exec.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\stm32_exec.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Mar 31 12:30:48 2015
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Wed Apr 01 22:16:14 2015
 <BR><P>
 <H3>Maximum Stack Usage =        216 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -984,6 +984,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setMotorStopped
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;plannerTask
 </UL>
 
 <P><STRONG><a name="[35]"></a>main</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, main.o(.text))
@@ -1721,9 +1722,9 @@ Global Symbols
 <P><STRONG><a name="[69]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check
+<BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;safetyTask
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check
 <LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;plannerTask
-<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;positionTrackerTask
 <LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
@@ -1771,7 +1772,7 @@ Local Symbols
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ETRClockMode1Config
 </UL>
 
-<P><STRONG><a name="[90]"></a>pollPin</STRONG> (Thumb, 346 bytes, Stack size 16 bytes, pin_listener.o(.text))
+<P><STRONG><a name="[90]"></a>pollPin</STRONG> (Thumb, 356 bytes, Stack size 16 bytes, pin_listener.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = pollPin &rArr; xQueueGenericSend &rArr; prvCopyDataToQueue &rArr; vTaskPriorityDisinherit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
@@ -1790,13 +1791,12 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> pin_listener.o(.text)
 </UL>
-<P><STRONG><a name="[38]"></a>positionTrackerTask</STRONG> (Thumb, 108 bytes, Stack size 8 bytes, position_tracker.o(.text))
+<P><STRONG><a name="[38]"></a>positionTrackerTask</STRONG> (Thumb, 170 bytes, Stack size 8 bytes, position_tracker.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = positionTrackerTask &rArr; vTaskDelayUntil &rArr; xTaskResumeAll &rArr; vTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> position_tracker.o(.text)
 </UL>
@@ -1843,10 +1843,11 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> motor.o(.text)
 </UL>
-<P><STRONG><a name="[3a]"></a>plannerTask</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, planner.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = plannerTask &rArr; setCarTargetPosition &rArr; setTargetPosition &rArr; xQueueGenericSend &rArr; prvCopyDataToQueue &rArr; vTaskPriorityDisinherit
+<P><STRONG><a name="[3a]"></a>plannerTask</STRONG> (Thumb, 126 bytes, Stack size 24 bytes, planner.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = plannerTask &rArr; setCarMotorStopped &rArr; setMotorStopped &rArr; xQueueGenericSend &rArr; prvCopyDataToQueue &rArr; vTaskPriorityDisinherit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setCarMotorStopped
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setCarTargetPosition
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
@@ -1862,7 +1863,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;safetyTask
 </UL>
 
-<P><STRONG><a name="[3b]"></a>safetyTask</STRONG> (Thumb, 190 bytes, Stack size 0 bytes, safety.o(.text))
+<P><STRONG><a name="[3b]"></a>safetyTask</STRONG> (Thumb, 510 bytes, Stack size 0 bytes, safety.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = safetyTask &rArr; check &rArr; setCarMotorStopped &rArr; setMotorStopped &rArr; xQueueGenericSend &rArr; prvCopyDataToQueue &rArr; vTaskPriorityDisinherit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check
@@ -1870,6 +1871,7 @@ Local Symbols
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCarPosition
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> safety.o(.text)
 </UL>

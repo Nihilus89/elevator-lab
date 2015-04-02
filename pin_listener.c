@@ -52,7 +52,8 @@ static void pollPin(PinListener *listener, xQueueHandle pinEventQueue)
 	{
 		pin = 7;
 		status[pin] = !status[pin];
-		xQueueSend(pinEventQueue, &pin, portMAX_DELAY); 
+		if(status[pin])
+			xQueueSend(pinEventQueue, &pin, portMAX_DELAY); 
 	}
 	
 	if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_8)!= status[8])

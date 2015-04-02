@@ -15,3 +15,4 @@
 .\planner.o: planner.h
 .\planner.o: assert.h
 .\planner.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\planner.o: assert.h
