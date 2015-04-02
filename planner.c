@@ -28,7 +28,10 @@
 #define SAFE_DISTANCE 5 // safe distance for test floor locations
 
 #define READ xQueueReceive(pinEventQueue, &pi, (portTickType)0)
-#define BUTTON0 READ & (pi == 0)
+
+#define UPWARDS_SAFE MOTOR_UPWARD && (currentPos < (Floors[FLOOR_2] - SAFE_DISTANCE))
+#define DOWNWARDS_SAFE MOTOR_DOWNWARD && (currentPos > (Floors[FLOOR_2] + SAFE_DISTANCE))
+#define SAFE_TO_STOP UPWARDS_SAFE || DOWNWARDS_SAFE
 
 int floorRequest[3]= {-1,-1,-1};
 int Floors[3]= {0,20,40};
@@ -51,19 +54,16 @@ static void plannerTask(void *params) {
 	PinEvent pi;
 	char qHead=0,qTail=0;
 	int destination, OLDdestination, interm_FLG = false;
-	bool status[9] = {false};
+	bool status[9] = {false}, reached = true, swap_FLG = false;
 	
 	for(;;)
 	{
 		currentPos = getCarPosition();
 		if(READ)
 		{
-			printf("\npin event");
 			status[pi] = !status[pi];
 			if(status[pi])
 			{
-				
-				// Queue the call if it's not already present
 				if(pi==0 || pi ==1 || pi == 2)
 				{
 					
@@ -72,22 +72,25 @@ static void plannerTask(void *params) {
 						if(qHead < 3)
 						{
 							floorRequest[qHead++] = Floors[pi];
-							printf("\nqueued\n");
+							printf("Queued: %d\n", pi);
 						}
 						else
 						{
 							qHead = 0;
 							floorRequest[qHead++] = Floors[pi];
-							printf("\nqueued\n");
+							printf("Queued: %d\n", pi);
 						}
 					}
 					else
-						printf("\nalready queued\n");
+						printf("%d is already queued\n", pi);
 				}
 			}
 		}
-	
-	
+		
+		if(SAFE_TO_STOP)
+			printf("SAFE_TO_STOP\n");
+		else
+			printf("NOT_SAFE_TO_STOP\n");
 		
 		// Reading the queue and setting the destination
 			if(MOTOR_STOPPED)
@@ -97,18 +100,31 @@ static void plannerTask(void *params) {
 					if(qTail > 2)
 						qTail =0;
 					
-					if(floorRequest[qTail]!= -1)
+					if(floorRequest[qTail]!= -1 && reached)
 					{
 						destination = floorRequest[qTail];
 						setCarTargetPosition(destination);
+						reached = false;
+						printf("\nSet car target position\n");
+						printf("floorRequest[0]: %d\n", floorRequest[0]);
+						printf("floorRequest[1]: %d\n", floorRequest[1]);
+						printf("floorRequest[2]: %d\n", floorRequest[2]);
+					}
+					
+					if((currentPos >= destination - 0.5) && (currentPos <= destination + 0.5) && !reached)
+					{
 						floorRequest[qTail] = -1;
 						qTail++;
+						reached = true;
+						printf("\nReached destination\n");
+						printf("floorRequest[0]: %d\n", floorRequest[0]);
+						printf("floorRequest[1]: %d\n", floorRequest[1]);
+						printf("floorRequest[2]: %d\n", floorRequest[2]);
 					}
-				//}
-				//else
-					//setCarTargetPosition(destination);
 			}
-			else
+			
+			
+			/*else
 			{
 				if((floorRequest[qTail] == 20) && !interm_FLG) // if floor request is 2 (somebody caled the elevator to floor 2)
 				{
@@ -148,10 +164,12 @@ static void plannerTask(void *params) {
 			setCarTargetPosition(OLDdestination);
 			interm_FLG = false;
 		}
+		
+		
 	//getCarPosition();
 	// SAFE_DISTANCE
 						
-			/*if(pi == 0)
+			if(pi == 0)
 				setCarTargetPosition(FLOOR_1);
 			if(pi == 1)
 				setCarTargetPosition(FLOOR_2);

@@ -27,9 +27,16 @@ Project File Date:  03/30/2015
 <h2>Output:</h2>
 Build target 'Target 1'
 compiling planner.c...
+planner.c(56): warning:  #177-D: variable "OLDdestination" was declared but never referenced
+        int destination, OLDdestination, interm_FLG = false;
+planner.c(56): warning:  #177-D: variable "interm_FLG" was declared but never referenced
+        int destination, OLDdestination, interm_FLG = false;
+planner.c(57): warning:  #177-D: variable "swap_FLG" was declared but never referenced
+        bool status[9] = {false}, reached = true, swap_FLG = false;
+planner.c: 3 warnings, 0 errors
 linking...
-Program Size: Code=15036 RO-data=304 RW-data=236 ZI-data=18212  
-".\stm32_exec.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=16032 RO-data=304 RW-data=236 ZI-data=18212  
+".\stm32_exec.axf" - 0 Error(s), 3 Warning(s).
 </pre>
 </body>
 </html>
