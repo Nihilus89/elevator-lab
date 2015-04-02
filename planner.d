@@ -9,10 +9,14 @@
 .\planner.o: .\FreeRTOS\inc\task.h
 .\planner.o: .\FreeRTOS\inc\list.h
 .\planner.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\planner.o: global.h
+.\planner.o: .\STM32F10xFWLib\inc\stm32f10x_tim.h
+.\planner.o: .\STM32F10xFWLib\inc\stm32f10x_map.h
+.\planner.o: .\stm32f10x_conf.h
 .\planner.o: .\STM32F10xFWLib\inc\stm32f10x_type.h
+.\planner.o: .\STM32F10xFWLib\inc\cortexm3_macro.h
+.\planner.o: global.h
 .\planner.o: .\FreeRTOS\inc\queue.h
 .\planner.o: planner.h
 .\planner.o: assert.h
+.\planner.o: .\FreeRTOS\inc\queue.h
 .\planner.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\planner.o: assert.h

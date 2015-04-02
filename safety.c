@@ -92,7 +92,8 @@ static void safetyTask(void *params) {
 		with a threshold of +-0.5cm)*/
 		position = getCarPosition();
 		FLOOR_POS = 1;
-		rightPosition = ((position == FLOOR_1 || position == FLOOR_1 + 1 || position == FLOOR_2 - 1 || position == FLOOR_2 || position == FLOOR_2 + 1 || position == FLOOR_3 - 1 || position == FLOOR_3 || position == FLOOR_3 + 1));
+		//rightPosition = ((position == FLOOR_1 || position == FLOOR_1 + 1 || position == FLOOR_2 - 1 || position == FLOOR_2 || position == FLOOR_2 + 1 || position == FLOOR_3 - 1 || position == FLOOR_3 || position == FLOOR_3 + 1));
+		rightPosition = ((position == FLOOR_1 || position == FLOOR_1 + 1 || position == 20 - 1 || position == 20 || position == 20 + 1 || position == 40 - 1 || position == 40 || position == 40 + 1));
 		if(AT_FLOOR)
 		{
 			if(!rightPosition)
@@ -123,7 +124,7 @@ static void safetyTask(void *params) {
           "req2");
 
 	// System requirement 3: The elevator may not pass the end positions, that is, go through the roof or the floor
-	check((position >= FLOOR_1) && (position <=FLOOR_3), "req3");
+	check((position >= FLOOR_1) && (position <=40), "req3");
 
 	// System requirement 4: A moving elevator halts only if the stop button is pressed or the elevator has arrived at a floor
 	if(MOTOR_STOPPED)

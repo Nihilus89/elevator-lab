@@ -18,11 +18,13 @@
 
 
 #define FLOOR_1 0
-#define FLOOR_2 400
-#define FLOOR_3 800
+//#define FLOOR_2 400
+//#define FLOOR_3 800
 
-//#define FLOOR_2 20
-//#define FLOOR_3 40
+
+// 
+#define FLOOR_2 1
+#define FLOOR_3 2
 
 
 
