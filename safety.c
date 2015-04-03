@@ -35,6 +35,8 @@
 unsigned char SPEED_LIMIT;
 static portTickType xLastWakeTime;
 
+extern bool TargetSet;
+
 PinEvent qPeek;
 
 static void check(u8 assertion, char *name) {
@@ -124,13 +126,15 @@ static void safetyTask(void *params) {
           "req2");
 
 	// System requirement 3: The elevator may not pass the end positions, that is, go through the roof or the floor
-	check((position >= FLOOR_1) && (position <=800), "req3");
+	check((position >= FLOOR_1 && position <=801), "req3");
 
 	// System requirement 4: A moving elevator halts only if the stop button is pressed or the elevator has arrived at a floor
 	if(MOTOR_STOPPED)
 		check((STOP_PRESSED || AT_FLOOR), "req4");
-
 	
+
+
+	// System requirement 5: Once the elevator has stopped at a floor, it will wait for at least 1s before it continues to another floor
 	if(MOTOR_STOPPED && AT_FLOOR)
 	{
 		if(arrived)
@@ -144,11 +148,17 @@ static void safetyTask(void *params) {
 	else
 		arrived = 1;
 	
-	// System requirement 5: Once the elevator has stopped at a floor, it will wait for at least 1s before it continues to another floor
-		check(on_floor>100 || MOTOR_STOPPED, "req5");
+	
+		check(on_floor>=100 || MOTOR_STOPPED, "req5");
 
-	// fill in safety requirement 6
-	check(1, "req6");
+	// 	//System Requirement 6: Elevator is moving only if the target destination is set
+	/*MOTOR_STOPPED		TargetSet  Output
+				0							0					0						//CASE WHERE MOTOR IS RUNNING AND TARGET IS NOT SET
+				0							1					1
+				1							0					1
+				1							1					1
+	*/
+	check((MOTOR_STOPPED^TargetSet)+(MOTOR_STOPPED&&TargetSet), "req6");
 
 		
 	vTaskDelayUntil(&xLastWakeTime, POLL_TIME);

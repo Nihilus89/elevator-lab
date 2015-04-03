@@ -60,36 +60,38 @@ static void plannerTask(void *params) {
 	for(;;)
 	{
 		currentPos = getCarPosition();
-		if(READ)
+		if(READ) // if a key press has been polled
 		{
-			status[pi] = !status[pi];
-			doors = status[8];
-			if(status[pi])
+			status[pi] = !status[pi];	// status = 1 pressed, status 0 = released for each pin
+			doors = status[8];	// get the status of the door
+			if(status[pi])		// process presses of the buttons
 			{
-				if(pi==3)
+				if(pi==3)	// just stop the car in case of pin 3 press
 						setCarMotorStopped(1);
-				if(pi==0 || pi ==1 || pi == 2)
+				if(pi==0 || pi ==1 || pi == 2)	// floor buttons
 				{
 					
-					if(!inQueue(pi))
+					if(!inQueue(pi))	// check if it's present in the queue
 					{
 						for (i=0;i<3;i++) 
 						{
-							if (floorRequest[i] == -1) 
+							if (floorRequest[i] == -1) // -1 is the "empty" value
 							{
-								floorRequest[i] = Floors[pi];
+								floorRequest[i] = Floors[pi];	// when you find the next empty value, insert and break the loop
 								printf("Queued: %d\n", pi);
 								break;	
 							}
 						}
-						if(SAFE_TO_STOP && pi == 1)
+						
+						// if the elevator is already moving and gets a call from floor 2 within a safe distance, make a stop there first
+						if(SAFE_TO_STOP && pi == 1)	// macro determining if it's safe, and only evaluate for press of floor 2
 						{
 							printf("Safe to make a stop at floor 2 first!\n");
 							floorRequest[2] = floorRequest[1];
 							floorRequest[1] = floorRequest[0];
 							floorRequest[0] = Floors[pi];
-							destination = Floors[pi];
-							setCarTargetPosition(destination);
+							destination = Floors[pi];		// bring the call to floor 2 in the front of the queue
+							setCarTargetPosition(destination);	// set the destination to floor 2
 						}
 					}
 					else
@@ -100,9 +102,9 @@ static void plannerTask(void *params) {
 		
 		
 		// Reading the queue and setting the destination
-			if(MOTOR_STOPPED)
+			if(MOTOR_STOPPED)	// calls are processed when the elevator is not moving
 			{				
-				if(floorRequest[0]!= -1 && reached && (count >= 210) && doors)
+				if(floorRequest[0]!= -1 && reached && (count >= 210) && doors)	// if there's something in the queue, the elevator has reached its destination and stayed for at least a second and the doors are closed
 					{
 						destination = floorRequest[0];
 						setCarTargetPosition(destination);
@@ -110,7 +112,7 @@ static void plannerTask(void *params) {
 						printf("\nSetting car target position to: %d\n", destination);
 					}
 					
-					if((currentPos >= destination - 0.5) && (currentPos <= destination + 0.5) && !reached)
+					if((currentPos >= destination - 0.5) && (currentPos <= destination + 0.5) && !reached)	// when you reach the destination, pop the first element
 					{
 						floorRequest[0] = floorRequest[1];
 						floorRequest[1] = floorRequest[2];
@@ -120,9 +122,9 @@ static void plannerTask(void *params) {
 						printf("\nReached destination: %lu\n", currentPos);
 					}
 			}
-			if(reached)
+			if(reached) // 210 * 5 ms minimum wait when reached a destination
 			{
-				if (count <= 210)
+				if (count <= 210)	// no need to determine value after that point
 					count++;
 			}
 

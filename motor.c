@@ -31,6 +31,8 @@
 #define MIN_SPEED         3       // minimum speed: 3cm/s
 #define DUTY_FACTOR       200     // 1cm/s corresponds to duty 200
 
+bool TargetSet = FALSE;
+
 static s32 maxDutyAtDistance(s32 distance) {
   if (distance > MAX_SPEED)
     distance = MAX_SPEED;
@@ -173,6 +175,7 @@ void setupMotor(Motor *motor,
 void setTargetPosition(Motor *motor, s32 target) {
   xSemaphoreTake(motor->lock, portMAX_DELAY);
   motor->targetPosition = target;
+	TargetSet = TRUE;
   xSemaphoreGive(motor->lock);
 }
 
