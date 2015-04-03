@@ -25,13 +25,13 @@
 #define MOTOR_DOWNWARD (TIM3->CCR2)
 #define MOTOR_STOPPED  (!MOTOR_UPWARD && !MOTOR_DOWNWARD)
 
-#define SAFE_DISTANCE 5 // safe distance for test floor locations
+#define SAFE_DISTANCE 50 // safe distance for test floor locations
 
 #define READ xQueueReceive(pinEventQueue, &pi, (portTickType)0)
 
 #define UPWARDS_SAFE MOTOR_UPWARD && (currentPos < (Floors[FLOOR_2] - SAFE_DISTANCE))
 #define DOWNWARDS_SAFE MOTOR_DOWNWARD && (currentPos > (Floors[FLOOR_2] + SAFE_DISTANCE))
-#define SAFE_TO_STOP UPWARDS_SAFE || DOWNWARDS_SAFE
+#define SAFE_TO_STOP (UPWARDS_SAFE || DOWNWARDS_SAFE)
 
 int floorRequest[3]= {-1,-1,-1};
 int Floors[3]= {0,400,800};
@@ -53,9 +53,8 @@ int inQueue(PinEvent pi)
 static void plannerTask(void *params) {
 	
 	PinEvent pi;
-	char qHead=0,qTail=0;
-	int destination, OLDdestination, interm_FLG = false, count = 0;
-	bool status[9] = {false}, reached = true, doors, door, at_floor, swap_FLG = false;
+	int destination, count = 0, i;
+	bool status[9] = {false}, reached = true, doors;
 	
 	xLastWakeTime = xTaskGetTickCount();
 	for(;;)
@@ -65,62 +64,60 @@ static void plannerTask(void *params) {
 		{
 			status[pi] = !status[pi];
 			doors = status[8];
-			at_floor = status[7];
 			if(status[pi])
 			{
+				if(pi==3)
+						setCarMotorStopped(1);
 				if(pi==0 || pi ==1 || pi == 2)
 				{
 					
 					if(!inQueue(pi))
 					{
-						if(qHead < 3)
+						for (i=0;i<3;i++) 
 						{
-							floorRequest[qHead++] = Floors[pi];
-							printf("Queued: %d\n", pi);
+							if (floorRequest[i] == -1) 
+							{
+								floorRequest[i] = Floors[pi];
+								printf("Queued: %d\n", pi);
+								break;	
+							}
 						}
-						else
+						if(SAFE_TO_STOP && pi == 1)
 						{
-							qHead = 0;
-							floorRequest[qHead++] = Floors[pi];
-							printf("Queued: %d\n", pi);
+							printf("Safe to make a stop at floor 2 first!\n");
+							floorRequest[2] = floorRequest[1];
+							floorRequest[1] = floorRequest[0];
+							floorRequest[0] = Floors[pi];
+							destination = Floors[pi];
+							setCarTargetPosition(destination);
 						}
 					}
 					else
 						printf("%d is already queued\n", pi);
+					}
 				}
 			}
-		}
+		
 		
 		// Reading the queue and setting the destination
 			if(MOTOR_STOPPED)
-			{
-
-				//if((currentPos >= (destination - 0.5)) && (currentPos <=(destination + 0.5)))
-				//{	
-					if(qTail > 2)
-						qTail =0;
-					
-					if(floorRequest[qTail]!= -1 && reached && (count >= 210) && doors)
+			{				
+				if(floorRequest[0]!= -1 && reached && (count >= 210) && doors)
 					{
-						destination = floorRequest[qTail];
+						destination = floorRequest[0];
 						setCarTargetPosition(destination);
 						reached = false;
-						printf("\nSet car target position\n");
-						printf("floorRequest[0]: %d\n", floorRequest[0]);
-						printf("floorRequest[1]: %d\n", floorRequest[1]);
-						printf("floorRequest[2]: %d\n", floorRequest[2]);
+						printf("\nSetting car target position to: %d\n", destination);
 					}
 					
 					if((currentPos >= destination - 0.5) && (currentPos <= destination + 0.5) && !reached)
 					{
-						floorRequest[qTail] = -1;
-						qTail++;
+						floorRequest[0] = floorRequest[1];
+						floorRequest[1] = floorRequest[2];
+						floorRequest[2] = -1;
 						reached = true;
 						count=0;
-						printf("\nReached destination\n");
-						printf("floorRequest[0]: %d\n", floorRequest[0]);
-						printf("floorRequest[1]: %d\n", floorRequest[1]);
-						printf("floorRequest[2]: %d\n", floorRequest[2]);
+						printf("\nReached destination: %lu\n", currentPos);
 					}
 			}
 			if(reached)
@@ -129,67 +126,6 @@ static void plannerTask(void *params) {
 					count++;
 			}
 
-			//printf("count: %d\n", count);
-			
-			/*else
-			{
-				if((floorRequest[qTail] == 20) && !interm_FLG) // if floor request is 2 (somebody caled the elevator to floor 2)
-				{
-					if(MOTOR_UPWARD) // and your moving upwards
-					{
-						if(currentPos < (Floors[FLOOR_2] - SAFE_DISTANCE))	// if you are at a safe distance from floor 2 to make a stop
-						{
-
-								 //you make a stop at floor 2
-								printf("\nDestination changed\n");
-								OLDdestination = destination;
-								destination = Floors[FLOOR_2];
-								setCarTargetPosition(destination);
-								interm_FLG = true;
-							
-						}
-					}
-					else if(MOTOR_DOWNWARD) // else if you are moving downwards
-					{
-						if(currentPos > (Floors[FLOOR_2] + SAFE_DISTANCE))	// if you are at a safe distance from floor 2 to make a stop
-						{
-
-							// you make a stop at floor 2
-							printf("\nDestination changed\n");
-							OLDdestination = destination;
-							destination = Floors[FLOOR_2];
-							setCarTargetPosition(destination);
-							interm_FLG = true;
-							
-						}
-					}
-				}
-			}
-			
-		if(interm_FLG && MOTOR_STOPPED)
-		{
-			setCarTargetPosition(OLDdestination);
-			interm_FLG = false;
-		}
-		
-		
-	//getCarPosition();
-	// SAFE_DISTANCE
-						
-			if(pi == 0)
-				setCarTargetPosition(FLOOR_1);
-			if(pi == 1)
-				setCarTargetPosition(FLOOR_2);
-			if(pi == 2)
-				setCarTargetPosition(FLOOR_3);
-			if(pi == 3)
-				setCarMotorStopped(1);
-			if(pi == 7)
-				printf("AT_FLOOR\n");*/
-			//if(status[pi])
-				//printf("Button %d pressed\n", pi);
-			//else
-				//printf("Button %d released\n", pi);
 		vTaskDelayUntil(&xLastWakeTime, DELAY);
 	}
 }
